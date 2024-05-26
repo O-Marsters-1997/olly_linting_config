@@ -9,6 +9,10 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
+    "./rules/best-practices.js",
+    "./rules/disabled-rules.js",
+    "./rules/functions.js",
+    "./rules/promises.js",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -20,5 +24,4 @@ module.exports = {
     },
   },
   plugins: ["@typescript-eslint", "promise", "prefer-arrow"],
-  rules: { "no-console": "error" },
 };
